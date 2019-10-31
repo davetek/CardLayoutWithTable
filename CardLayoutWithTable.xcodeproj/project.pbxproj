@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		21B1B93A236B9E6D00096FDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B1B939236B9E6D00096FDA /* AppDelegate.swift */; };
-		21B1B93C236B9E6D00096FDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B1B93B236B9E6D00096FDA /* SceneDelegate.swift */; };
 		21B1B93E236B9E6D00096FDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B1B93D236B9E6D00096FDA /* ViewController.swift */; };
 		21B1B941236B9E6D00096FDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B1B93F236B9E6D00096FDA /* Main.storyboard */; };
 		21B1B943236B9E7000096FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B1B942236B9E7000096FDA /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		21B1B936236B9E6D00096FDA /* CardLayoutWithTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardLayoutWithTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B1B939236B9E6D00096FDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21B1B93B236B9E6D00096FDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		21B1B93D236B9E6D00096FDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21B1B940236B9E6D00096FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21B1B942236B9E7000096FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				21B1B939236B9E6D00096FDA /* AppDelegate.swift */,
-				21B1B93B236B9E6D00096FDA /* SceneDelegate.swift */,
 				21B1B93D236B9E6D00096FDA /* ViewController.swift */,
 				21B1B93F236B9E6D00096FDA /* Main.storyboard */,
 				21B1B942236B9E7000096FDA /* Assets.xcassets */,
@@ -140,7 +137,6 @@
 			files = (
 				21B1B93E236B9E6D00096FDA /* ViewController.swift in Sources */,
 				21B1B93A236B9E6D00096FDA /* AppDelegate.swift in Sources */,
-				21B1B93C236B9E6D00096FDA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,10 +283,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73REF5W5RY;
 				INFOPLIST_FILE = CardLayoutWithTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.clarityforaction.CardLayoutWithTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -305,10 +303,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73REF5W5RY;
 				INFOPLIST_FILE = CardLayoutWithTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.clarityforaction.CardLayoutWithTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

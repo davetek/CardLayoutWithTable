@@ -19,6 +19,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        registerTableViewCells()
+    }
+    
+    
+    func registerTableViewCells() {
+        let customCell = UINib(nibName: "TableViewCell", bundle: nil)
+        self.tableView.register(customCell, forCellReuseIdentifier: "TableViewCell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,9 +34,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
-        let cellText = data[indexPath.row]
-        cell.textLabel?.text = cellText
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
+//        let cellText = data[indexPath.row]
+//        cell.textLabel?.text = cellText
         return cell
     }
     

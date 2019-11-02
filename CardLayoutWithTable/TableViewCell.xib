@@ -17,6 +17,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXi-5T-wAm" userLabel="Container View">
+                        <rect key="frame" x="11" y="5.5" width="298" height="239"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVi-WO-8Tp">
                         <rect key="frame" x="139" y="114.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -24,10 +28,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="hVi-WO-8Tp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qea-6e-pPv"/>
                     <constraint firstItem="hVi-WO-8Tp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="T8C-UT-lEw"/>
+                    <constraint firstItem="gXi-5T-wAm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="Urk-US-BM9"/>
+                    <constraint firstItem="gXi-5T-wAm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5.5" id="ZZB-DF-dSX"/>
+                    <constraint firstAttribute="trailing" secondItem="gXi-5T-wAm" secondAttribute="trailing" constant="11" id="bar-Db-KNf"/>
+                    <constraint firstAttribute="bottom" secondItem="gXi-5T-wAm" secondAttribute="bottom" constant="5.5" id="jmV-dL-4FV"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

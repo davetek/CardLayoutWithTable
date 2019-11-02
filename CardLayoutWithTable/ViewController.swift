@@ -39,18 +39,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
 //        let cellText = data[indexPath.row]
 //        cell.textLabel?.text = cellText
+
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let tableViewWidth = tableView.frame.width
-        let tableViewCellPadding: CGFloat = 9
+        let tableViewCellPadding: CGFloat = 11
         let containerViewWidth = tableViewWidth - (tableViewCellPadding * 2)
         let largeImageWidth = containerViewWidth
         let largeImageHeight = largeImageWidth / 2
         let smallImageHeight: CGFloat = 48
         let smallImageMargin: CGFloat = 4
-        let tableRowHeight = largeImageHeight + smallImageHeight + (smallImageMargin * 2)
+        let tableRowHeight = largeImageHeight + smallImageHeight + (smallImageMargin * 2) + tableViewCellPadding
+        print("large image height calculated as: \(largeImageHeight)")
         print("table row height calculated as: \(tableRowHeight)")
         return tableRowHeight
     }

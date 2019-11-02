@@ -51,7 +51,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let largeImageHeight = largeImageWidth / 2
         let smallImageHeight: CGFloat = 48
         let smallImageMargin: CGFloat = 4
-        let tableRowHeight = largeImageHeight + smallImageHeight + (smallImageMargin * 2) + tableViewCellPadding
+        let tableRowHeight = largeImageHeight + smallImageHeight + (smallImageMargin * 2) + (tableViewCellPadding * 2)
         print("large image height calculated as: \(largeImageHeight)")
         print("table row height calculated as: \(tableRowHeight)")
         return tableRowHeight

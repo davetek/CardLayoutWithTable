@@ -10,13 +10,23 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
+    @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var labelForText: UILabel!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        //round the corners
+        shadowView.layer.cornerRadius = 10
         containerView.layer.cornerRadius = 10
+        
+        //display a drop shadow
+        shadowView.layer.shadowRadius = 5
+        shadowView.layer.shadowOffset = .zero
+        shadowView.layer.shadowOpacity = 0.5
+        
         // Initialization code
     }
 

@@ -36,9 +36,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-//        let cellText = data[indexPath.row]
-//        cell.textLabel?.text = cellText
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        let cellText = data[indexPath.row]
+        cell.labelForText.text = cellText
 
         return cell
     }
